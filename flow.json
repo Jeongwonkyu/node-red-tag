@@ -102,7 +102,7 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 470,
+        "x": 550,
         "y": 400,
         "wires": [
             [
