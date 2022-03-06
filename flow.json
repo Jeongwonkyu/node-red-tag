@@ -1,1 +1,113 @@
-[]
+[
+    {
+        "id": "f52356682ef521b6",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d78b39c09204eea4",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "55432",
+        "portFieldType": "num",
+        "database": "node-red",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "max": "10",
+        "maxFieldType": "num",
+        "min": "1",
+        "minFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "egg1412",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "1efe79154ea262b7",
+        "type": "inject",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "test_AAA",
+        "payloadType": "str",
+        "x": 260,
+        "y": 280,
+        "wires": [
+            [
+                "028d4002f882cbd0"
+            ]
+        ]
+    },
+    {
+        "id": "8f3ae5ec69535d6f",
+        "type": "debug",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "41ace98fb0de4bca",
+        "type": "signal-filter",
+        "z": "f52356682ef521b6",
+        "prefix": "",
+        "name": "",
+        "x": 730,
+        "y": 280,
+        "wires": [
+            [
+                "8f3ae5ec69535d6f"
+            ]
+        ]
+    },
+    {
+        "id": "028d4002f882cbd0",
+        "type": "postgresql",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "query": "SELECT a.\"TagName\", a.\"Description\", a.\"SigType\",\na.\"EuUnit\", a.\"EuLo\", a.\"EuHi\", a.\"LimitLoLo\",\na.\"LimitLo\", a.\"LimitHi\", a.\"LimitHiHi\",\nb.\"TimeStamp\", b.\"Value\", b.\"Quality\"\nFROM \"TagMaster\" a, \"TagValue\" b WHERE a.\"TagName\" = b.\"TagName\";",
+        "postgreSQLConfig": "d78b39c09204eea4",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 470,
+        "y": 400,
+        "wires": [
+            [
+                "41ace98fb0de4bca"
+            ]
+        ]
+    }
+]
