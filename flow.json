@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "49a059a331e99ceb",
+        "type": "tab",
+        "label": "플로우 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "d78b39c09204eea4",
         "type": "postgreSQLConfig",
         "name": "",
@@ -298,10 +306,10 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "test_AAA",
-        "payloadType": "str",
-        "x": 530,
-        "y": 200,
+        "payload": "START",
+        "payloadType": "flow",
+        "x": 110,
+        "y": 340,
         "wires": [
             [
                 "028d4002f882cbd0"
@@ -321,8 +329,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1830,
-        "y": 720,
+        "x": 1350,
+        "y": 960,
         "wires": []
     },
     {
@@ -332,8 +340,8 @@
         "name": "",
         "tag": "TagA",
         "field": "All",
-        "x": 1110,
-        "y": 100,
+        "x": 630,
+        "y": 340,
         "wires": [
             [
                 "732e65e32d7ab276",
@@ -354,8 +362,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 790,
-        "y": 200,
+        "x": 290,
+        "y": 340,
         "wires": [
             [
                 "41ace98fb0de4bca",
@@ -388,8 +396,8 @@
         "name": "",
         "tag": "TagA",
         "field": "All",
-        "x": 1110,
-        "y": 800,
+        "x": 630,
+        "y": 1040,
         "wires": [
             [
                 "8f3ae5ec69535d6f",
@@ -407,8 +415,8 @@
         "name": "",
         "tag": "TagB",
         "field": "All",
-        "x": 1110,
-        "y": 860,
+        "x": 630,
+        "y": 1100,
         "wires": [
             [
                 "8f3ae5ec69535d6f",
@@ -426,8 +434,8 @@
         "name": "",
         "tag": "TagC",
         "field": "All",
-        "x": 1110,
-        "y": 920,
+        "x": 630,
+        "y": 1160,
         "wires": [
             [
                 "8f3ae5ec69535d6f",
@@ -445,8 +453,8 @@
         "name": "",
         "tag": "TagD",
         "field": "All",
-        "x": 1110,
-        "y": 980,
+        "x": 630,
+        "y": 1220,
         "wires": [
             [
                 "8f3ae5ec69535d6f",
@@ -464,8 +472,8 @@
         "name": "",
         "tag": "TagE",
         "field": "All",
-        "x": 1110,
-        "y": 1040,
+        "x": 630,
+        "y": 1280,
         "wires": [
             [
                 "8f3ae5ec69535d6f",
@@ -483,8 +491,8 @@
         "name": "",
         "tag": "TagB",
         "field": "All",
-        "x": 1110,
-        "y": 160,
+        "x": 630,
+        "y": 400,
         "wires": [
             [
                 "732e65e32d7ab276",
@@ -502,8 +510,8 @@
         "name": "",
         "tag": "TagC",
         "field": "All",
-        "x": 1110,
-        "y": 220,
+        "x": 630,
+        "y": 460,
         "wires": [
             [
                 "732e65e32d7ab276",
@@ -521,8 +529,8 @@
         "name": "",
         "tag": "TagD",
         "field": "All",
-        "x": 1110,
-        "y": 280,
+        "x": 630,
+        "y": 520,
         "wires": [
             [
                 "732e65e32d7ab276",
@@ -540,8 +548,8 @@
         "name": "",
         "tag": "TagE",
         "field": "All",
-        "x": 1110,
-        "y": 340,
+        "x": 630,
+        "y": 580,
         "wires": [
             [
                 "732e65e32d7ab276",
@@ -565,8 +573,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1830,
-        "y": 20,
+        "x": 1350,
+        "y": 260,
         "wires": []
     },
     {
@@ -582,8 +590,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 160,
+        "x": 1090,
+        "y": 400,
         "wires": []
     },
     {
@@ -599,8 +607,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 220,
+        "x": 1090,
+        "y": 460,
         "wires": []
     },
     {
@@ -616,8 +624,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 280,
+        "x": 1090,
+        "y": 520,
         "wires": []
     },
     {
@@ -633,8 +641,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 340,
+        "x": 1090,
+        "y": 580,
         "wires": []
     },
     {
@@ -650,8 +658,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 400,
+        "x": 1090,
+        "y": 640,
         "wires": []
     },
     {
@@ -677,8 +685,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 180,
+        "x": 1250,
+        "y": 420,
         "wires": []
     },
     {
@@ -704,8 +712,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 240,
+        "x": 1250,
+        "y": 480,
         "wires": []
     },
     {
@@ -731,8 +739,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 300,
+        "x": 1250,
+        "y": 540,
         "wires": []
     },
     {
@@ -758,8 +766,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 360,
+        "x": 1250,
+        "y": 600,
         "wires": []
     },
     {
@@ -785,8 +793,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 420,
+        "x": 1250,
+        "y": 660,
         "wires": []
     },
     {
@@ -802,8 +810,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 140,
+        "x": 930,
+        "y": 380,
         "wires": []
     },
     {
@@ -819,8 +827,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 200,
+        "x": 930,
+        "y": 440,
         "wires": []
     },
     {
@@ -836,8 +844,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 260,
+        "x": 930,
+        "y": 500,
         "wires": []
     },
     {
@@ -853,8 +861,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 320,
+        "x": 930,
+        "y": 560,
         "wires": []
     },
     {
@@ -870,8 +878,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 380,
+        "x": 930,
+        "y": 620,
         "wires": []
     },
     {
@@ -887,8 +895,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 860,
+        "x": 1090,
+        "y": 1100,
         "wires": []
     },
     {
@@ -904,8 +912,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 920,
+        "x": 1090,
+        "y": 1160,
         "wires": []
     },
     {
@@ -921,8 +929,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 980,
+        "x": 1090,
+        "y": 1220,
         "wires": []
     },
     {
@@ -938,8 +946,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 1040,
+        "x": 1090,
+        "y": 1280,
         "wires": []
     },
     {
@@ -955,8 +963,8 @@
         "format": "{{msg.payload.Value}} {{msg.payload.EuUnit}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1570,
-        "y": 1100,
+        "x": 1090,
+        "y": 1340,
         "wires": []
     },
     {
@@ -982,8 +990,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 880,
+        "x": 1250,
+        "y": 1120,
         "wires": []
     },
     {
@@ -1009,8 +1017,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 940,
+        "x": 1250,
+        "y": 1180,
         "wires": []
     },
     {
@@ -1036,8 +1044,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 1000,
+        "x": 1250,
+        "y": 1240,
         "wires": []
     },
     {
@@ -1063,8 +1071,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 1060,
+        "x": 1250,
+        "y": 1300,
         "wires": []
     },
     {
@@ -1090,8 +1098,8 @@
         "seg1": "30",
         "seg2": "70",
         "className": "",
-        "x": 1730,
-        "y": 1120,
+        "x": 1250,
+        "y": 1360,
         "wires": []
     },
     {
@@ -1107,8 +1115,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 840,
+        "x": 930,
+        "y": 1080,
         "wires": []
     },
     {
@@ -1124,8 +1132,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 900,
+        "x": 930,
+        "y": 1140,
         "wires": []
     },
     {
@@ -1141,8 +1149,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 960,
+        "x": 930,
+        "y": 1200,
         "wires": []
     },
     {
@@ -1158,8 +1166,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 1020,
+        "x": 930,
+        "y": 1260,
         "wires": []
     },
     {
@@ -1175,8 +1183,8 @@
         "format": "{{msg.payload.TimeStamp}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1410,
-        "y": 1080,
+        "x": 930,
+        "y": 1320,
         "wires": []
     },
     {
@@ -1217,8 +1225,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 460,
+        "x": 930,
+        "y": 700,
         "wires": [
             []
         ]
@@ -1230,8 +1238,8 @@
         "name": "",
         "tag": "TagA",
         "field": "Value",
-        "x": 1110,
-        "y": 460,
+        "x": 630,
+        "y": 700,
         "wires": [
             [
                 "f4768b4e3b6ecd63",
@@ -1246,8 +1254,8 @@
         "name": "",
         "tag": "TagB",
         "field": "Value",
-        "x": 1110,
-        "y": 520,
+        "x": 630,
+        "y": 760,
         "wires": [
             [
                 "5894f49a5fdb3e3e",
@@ -1262,8 +1270,8 @@
         "name": "",
         "tag": "TagC",
         "field": "Value",
-        "x": 1110,
-        "y": 580,
+        "x": 630,
+        "y": 820,
         "wires": [
             [
                 "8e419c47ccf0d5e0",
@@ -1278,8 +1286,8 @@
         "name": "",
         "tag": "TagD",
         "field": "Value",
-        "x": 1110,
-        "y": 640,
+        "x": 630,
+        "y": 880,
         "wires": [
             [
                 "3d75501891e10ff6",
@@ -1294,8 +1302,8 @@
         "name": "",
         "tag": "TagE",
         "field": "Value",
-        "x": 1110,
-        "y": 700,
+        "x": 630,
+        "y": 940,
         "wires": [
             [
                 "507efc1d53cc89b8",
@@ -1341,8 +1349,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 520,
+        "x": 930,
+        "y": 760,
         "wires": [
             []
         ]
@@ -1385,8 +1393,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 580,
+        "x": 930,
+        "y": 820,
         "wires": [
             []
         ]
@@ -1429,8 +1437,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 640,
+        "x": 930,
+        "y": 880,
         "wires": [
             []
         ]
@@ -1473,8 +1481,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 700,
+        "x": 930,
+        "y": 940,
         "wires": [
             []
         ]
@@ -1486,8 +1494,8 @@
         "name": "",
         "tag": "TagA",
         "field": "Value",
-        "x": 1110,
-        "y": 1160,
+        "x": 630,
+        "y": 1400,
         "wires": [
             [
                 "8298dcab0e56f312",
@@ -1502,8 +1510,8 @@
         "name": "",
         "tag": "TagB",
         "field": "Value",
-        "x": 1110,
-        "y": 1220,
+        "x": 630,
+        "y": 1460,
         "wires": [
             [
                 "613b8df9b315a05a",
@@ -1518,8 +1526,8 @@
         "name": "",
         "tag": "TagC",
         "field": "Value",
-        "x": 1110,
-        "y": 1280,
+        "x": 630,
+        "y": 1520,
         "wires": [
             [
                 "e4eb6bc40b8a8a56",
@@ -1534,8 +1542,8 @@
         "name": "",
         "tag": "TagD",
         "field": "Value",
-        "x": 1110,
-        "y": 1340,
+        "x": 630,
+        "y": 1580,
         "wires": [
             [
                 "4f226a8bcd7cc272",
@@ -1550,8 +1558,8 @@
         "name": "",
         "tag": "TagE",
         "field": "Value",
-        "x": 1110,
-        "y": 1400,
+        "x": 630,
+        "y": 1640,
         "wires": [
             [
                 "350997102acd2684",
@@ -1597,8 +1605,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 1160,
+        "x": 930,
+        "y": 1400,
         "wires": [
             []
         ]
@@ -1641,8 +1649,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 1220,
+        "x": 930,
+        "y": 1460,
         "wires": [
             []
         ]
@@ -1685,8 +1693,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 1280,
+        "x": 930,
+        "y": 1520,
         "wires": [
             []
         ]
@@ -1729,8 +1737,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 1340,
+        "x": 930,
+        "y": 1580,
         "wires": [
             []
         ]
@@ -1773,8 +1781,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1410,
-        "y": 1400,
+        "x": 930,
+        "y": 1640,
         "wires": [
             []
         ]
@@ -1817,8 +1825,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 480,
+        "x": 1090,
+        "y": 720,
         "wires": []
     },
     {
@@ -1859,8 +1867,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 540,
+        "x": 1090,
+        "y": 780,
         "wires": []
     },
     {
@@ -1901,8 +1909,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 600,
+        "x": 1090,
+        "y": 840,
         "wires": []
     },
     {
@@ -1943,8 +1951,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 660,
+        "x": 1090,
+        "y": 900,
         "wires": []
     },
     {
@@ -1985,8 +1993,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 720,
+        "x": 1090,
+        "y": 960,
         "wires": []
     },
     {
@@ -2027,8 +2035,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 1180,
+        "x": 1090,
+        "y": 1420,
         "wires": []
     },
     {
@@ -2069,8 +2077,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 1240,
+        "x": 1090,
+        "y": 1480,
         "wires": []
     },
     {
@@ -2111,8 +2119,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 1300,
+        "x": 1090,
+        "y": 1540,
         "wires": []
     },
     {
@@ -2153,8 +2161,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 1360,
+        "x": 1090,
+        "y": 1600,
         "wires": []
     },
     {
@@ -2195,8 +2203,8 @@
         "peakmode": false,
         "property": "payload",
         "peaktime": 3000,
-        "x": 1570,
-        "y": 1420,
+        "x": 1090,
+        "y": 1660,
         "wires": []
     },
     {
@@ -2237,8 +2245,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 2010,
-        "y": 300,
+        "x": 1530,
+        "y": 540,
         "wires": [
             []
         ]
@@ -2254,8 +2262,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1820,
-        "y": 80,
+        "x": 1340,
+        "y": 320,
         "wires": [
             [
                 "e08cd45436c411f5"
@@ -2300,8 +2308,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 2010,
-        "y": 1000,
+        "x": 1530,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -2317,11 +2325,416 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1820,
-        "y": 780,
+        "x": 1340,
+        "y": 1020,
         "wires": [
             [
                 "409d31bb2a9c87a4"
+            ]
+        ]
+    },
+    {
+        "id": "8fc313766b0f96d6",
+        "type": "postgresql",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "query": "SELECT * FROM \"TagMaster\"",
+        "postgreSQLConfig": "d78b39c09204eea4",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 450,
+        "y": 100,
+        "wires": [
+            [
+                "c3e2d6394046113b"
+            ]
+        ]
+    },
+    {
+        "id": "e55e58a49a73f1c6",
+        "type": "http in",
+        "z": "f52356682ef521b6",
+        "name": "Get TagMaster",
+        "url": "/tags",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "ddd350553a161592"
+            ]
+        ]
+    },
+    {
+        "id": "b5c7ae6eaa9a96b1",
+        "type": "debug",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "ddd350553a161592",
+        "type": "function",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "func": "var tags = global.get(\"tags\");\n// console.log(tags);\nif (tags === undefined)\n    return msg;\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 100,
+        "wires": [
+            [
+                "8fc313766b0f96d6"
+            ]
+        ]
+    },
+    {
+        "id": "c3e2d6394046113b",
+        "type": "function",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "func": "global.set(\"tags\", msg.payload);\n// console.log(msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 100,
+        "wires": [
+            [
+                "b5c7ae6eaa9a96b1",
+                "7320038813989ac8"
+            ]
+        ]
+    },
+    {
+        "id": "f722c869b1ebe7ae",
+        "type": "comment",
+        "z": "f52356682ef521b6",
+        "name": "TagMaster 전역 변수 등록",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "836270c98b214506",
+        "type": "comment",
+        "z": "f52356682ef521b6",
+        "name": "커스텀 노드 사용 예제",
+        "info": "",
+        "x": 120,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "da3adb131d5bc4fc",
+        "type": "http response",
+        "z": "f52356682ef521b6",
+        "name": "Response TagMaster",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 1000,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "7320038813989ac8",
+        "type": "template",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 780,
+        "y": 160,
+        "wires": [
+            [
+                "da3adb131d5bc4fc"
+            ]
+        ]
+    },
+    {
+        "id": "b459e472d2294153",
+        "type": "inject",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1220,
+        "y": 100,
+        "wires": [
+            [
+                "8b65bf32dd0804fb"
+            ]
+        ]
+    },
+    {
+        "id": "c879810811d7fcaf",
+        "type": "debug",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1610,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8b65bf32dd0804fb",
+        "type": "http request",
+        "z": "f52356682ef521b6",
+        "name": "Get /tags",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/tags",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 1400,
+        "y": 100,
+        "wires": [
+            [
+                "c879810811d7fcaf"
+            ]
+        ]
+    },
+    {
+        "id": "882958abc5ceafac",
+        "type": "inject",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1220,
+        "y": 160,
+        "wires": [
+            [
+                "69bc77e9219a95f8"
+            ]
+        ]
+    },
+    {
+        "id": "69bc77e9219a95f8",
+        "type": "function",
+        "z": "f52356682ef521b6",
+        "name": "Global TagMaster",
+        "func": "msg.payload = global.get(\"tags\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 160,
+        "wires": [
+            [
+                "875f24daa67f9ccd"
+            ]
+        ]
+    },
+    {
+        "id": "875f24daa67f9ccd",
+        "type": "debug",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1610,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "9e56739a74e21c7f",
+        "type": "http in",
+        "z": "f52356682ef521b6",
+        "name": "Get TagMaster",
+        "url": "/tag_list",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 180,
+        "wires": [
+            [
+                "80e409d0768693a0"
+            ]
+        ]
+    },
+    {
+        "id": "80e409d0768693a0",
+        "type": "postgresql",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "query": "SELECT * FROM \"TagMaster\"",
+        "postgreSQLConfig": "d78b39c09204eea4",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 290,
+        "y": 180,
+        "wires": [
+            [
+                "d91ef2a3b24e90e3"
+            ]
+        ]
+    },
+    {
+        "id": "d91ef2a3b24e90e3",
+        "type": "function",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 180,
+        "wires": [
+            [
+                "7c8e92053fe893b7"
+            ]
+        ]
+    },
+    {
+        "id": "7c8e92053fe893b7",
+        "type": "http response",
+        "z": "f52356682ef521b6",
+        "name": "Response TagMaster",
+        "statusCode": "",
+        "headers": {
+            "content-type": "application/json"
+        },
+        "x": 660,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8f22a97b83a72e23",
+        "type": "debug",
+        "z": "49a059a331e99ceb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "62851bbdc1c11165",
+        "type": "function",
+        "z": "49a059a331e99ceb",
+        "name": "Global TagMaster",
+        "func": "msg.payload = global.get(\"tags\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 80,
+        "wires": [
+            [
+                "8f22a97b83a72e23"
+            ]
+        ]
+    },
+    {
+        "id": "d90dc19420d24eb0",
+        "type": "inject",
+        "z": "49a059a331e99ceb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "62851bbdc1c11165"
             ]
         ]
     }
