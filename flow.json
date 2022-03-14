@@ -288,6 +288,24 @@
         "className": ""
     },
     {
+        "id": "a223b12f.6e05a",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "45c56a9a.0646c4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "45c56a9a.0646c4",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "1efe79154ea262b7",
         "type": "inject",
         "z": "f52356682ef521b6",
@@ -2894,6 +2912,88 @@
         "complete": "false",
         "x": 470,
         "y": 220,
+        "wires": []
+    },
+    {
+        "id": "97d389df.a74008",
+        "type": "inject",
+        "z": "49a059a331e99ceb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "8d5af63e.ae2ef8"
+            ]
+        ]
+    },
+    {
+        "id": "8d5af63e.ae2ef8",
+        "type": "exec",
+        "z": "49a059a331e99ceb",
+        "command": "dir/w",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "7f4d00cc.09979",
+                "484463190d641e57"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7f4d00cc.09979",
+        "type": "ui_template",
+        "z": "49a059a331e99ceb",
+        "group": "a223b12f.6e05a",
+        "name": "",
+        "order": 0,
+        "width": "6",
+        "height": "8",
+        "format": "<pre><div ng-bind-html=\"msg.payload\"></div></pre>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 500,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "484463190d641e57",
+        "type": "debug",
+        "z": "49a059a331e99ceb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 510,
+        "y": 400,
         "wires": []
     }
 ]
