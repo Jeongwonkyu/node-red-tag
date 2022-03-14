@@ -1212,12 +1212,12 @@
         "useOneColor": false,
         "useUTC": false,
         "colors": [
-            "#1f77b4",
+            "#d81818",
             "#aec7e8",
             "#ff7f0e",
             "#2ca02c",
             "#98df8a",
-            "#d62728",
+            "#db2929",
             "#ff9896",
             "#9467bd",
             "#c5b0d5"
@@ -1336,9 +1336,9 @@
         "useOneColor": false,
         "useUTC": false,
         "colors": [
-            "#1f77b4",
+            "#f66504",
             "#aec7e8",
-            "#ff7f0e",
+            "#ff8214",
             "#2ca02c",
             "#98df8a",
             "#d62728",
@@ -1380,7 +1380,7 @@
         "useOneColor": false,
         "useUTC": false,
         "colors": [
-            "#1f77b4",
+            "#eaf368",
             "#aec7e8",
             "#ff7f0e",
             "#2ca02c",
@@ -1388,7 +1388,7 @@
             "#d62728",
             "#ff9896",
             "#9467bd",
-            "#c5b0d5"
+            "#ccb8db"
         ],
         "outputs": 1,
         "useDifferentColor": false,
@@ -1424,7 +1424,7 @@
         "useOneColor": false,
         "useUTC": false,
         "colors": [
-            "#1f77b4",
+            "#38a90f",
             "#aec7e8",
             "#ff7f0e",
             "#2ca02c",
@@ -1468,7 +1468,7 @@
         "useOneColor": false,
         "useUTC": false,
         "colors": [
-            "#1f77b4",
+            "#ae18d8",
             "#aec7e8",
             "#ff7f0e",
             "#2ca02c",
@@ -2629,7 +2629,7 @@
         "type": "postgresql",
         "z": "f52356682ef521b6",
         "name": "",
-        "query": "SELECT * FROM \"TagMaster\"",
+        "query": "SELECT * FROM \"TagMaster\" ORDER BY \"TagName\" ASC",
         "postgreSQLConfig": "d78b39c09204eea4",
         "split": false,
         "rowsPerMsg": 1,
