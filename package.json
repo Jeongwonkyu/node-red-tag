@@ -2,7 +2,18 @@
     "name": "node-red-tag",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-postgresql": "0.8.0",
+        "node-red-contrib-ui-level": "0.1.46",
+        "node-red-dashboard": "3.1.6",
+        "@rosbud/signal-tage": "0.0.1",
+        "@rosbud/signal-tagd": "0.0.1",
+        "@rosbud/signal-tagc": "0.0.1",
+        "@rosbud/signal-tagb": "0.0.1",
+        "@rosbud/signal-taga": "0.0.1",
+        "@rosbud/signal-filter": "0.0.1",
+        "node-red-contrib-light-scheduler": "0.0.18"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
