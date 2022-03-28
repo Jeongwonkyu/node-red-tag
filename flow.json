@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "7acb2dc94956cd1b",
+        "type": "tab",
+        "label": "플로우 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "d78b39c09204eea4",
         "type": "postgreSQLConfig",
         "name": "",
@@ -304,6 +312,17 @@
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "f4101a3d4ab4342b",
+        "type": "ui_group",
+        "name": "Restart Node-Red",
+        "tab": "45c56a9a.0646c4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "1efe79154ea262b7",
@@ -2742,6 +2761,156 @@
         ]
     },
     {
+        "id": "9e548f7e9666c348",
+        "type": "comment",
+        "z": "f52356682ef521b6",
+        "name": "사용자 이벤트",
+        "info": "버튼을 클릭하면 Node-Red를 재 시작한다.",
+        "x": 90,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "a06415d6.7ed3c8",
+        "type": "function",
+        "z": "f52356682ef521b6",
+        "name": "Request Token",
+        "func": "msg.payload = {\n    \"client_id\": \"node-red-editor\",\n    \"grant_type\": \"password\",\n    \"scope\": \"*\",\n    \"username\": \"admin\",\n    \"password\": \"egg1412\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1860,
+        "wires": [
+            [
+                "47aa4d07.5bae94"
+            ]
+        ]
+    },
+    {
+        "id": "649f96c6.bc9128",
+        "type": "inject",
+        "z": "f52356682ef521b6",
+        "name": "Manual reload",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 110,
+        "y": 1860,
+        "wires": [
+            [
+                "a06415d6.7ed3c8"
+            ]
+        ]
+    },
+    {
+        "id": "47aa4d07.5bae94",
+        "type": "http request",
+        "z": "f52356682ef521b6",
+        "name": "Token",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/auth/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 510,
+        "y": 1860,
+        "wires": [
+            [
+                "d69beb8b.7008a8"
+            ]
+        ],
+        "info": "Note:\nEnsure the path is correct\nif httpAdminRoot: '/admin' is activated then \nthis needs to be added to\nhttp://localhost:1880/"
+    },
+    {
+        "id": "d69beb8b.7008a8",
+        "type": "function",
+        "z": "f52356682ef521b6",
+        "name": "Confirm token",
+        "func": "// get the status of the request\nvar status = msg.statusCode;\n\nvar token = '';\nmsg.headers ={};\n\n//let node = feedback;\n\nswitch(status){\n    case 200:\n        node.log(\"Secure restart\");\n        token = JSON.parse(msg.payload);\n        token = 'Bearer '+token.access_token;\n        msg.headers = {\n            \"Authorization\": token,\n            \"Node-RED-Deployment-Type\":\"reload\"\n        }\n//msg.payload =\"\";\n        break;\n    case 204:\n        node.log(\"Secure without restart\");\n        break;\n    case 400:\n        node.warn(\"Bad request\");\n        break;\n    case 401:\n        node.warn(\"Not authorized\");\n        break;\n    case 403:\n        node.warn(\"Forbidden\");\n        break;\n    case 404:\n        node.log(\"Unsecure restart\");\n        msg.headers = {\n            \"Node-RED-Deployment-Type\":\"reload\"\n        }\n        break;\n    case 409:\n        node.warn(\"Version mismatch\");\n        break;\n    case 500:\n        node.error(\"Server Error\");\n        break;\n    default:\n        node.warn(\"Unknown Error\");\n       break;\n}\n\nmsg.payload = \"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 1860,
+        "wires": [
+            [
+                "ccd455c1.f34318"
+            ]
+        ],
+        "info": "Restart of Node-Red flows.\nWill check if the action needs security or not.\nNote: if the first 5 attemps return a statuscode 403 'forbidden'\nthen the server will break and only way to recover is then to\nrestart the service"
+    },
+    {
+        "id": "ccd455c1.f34318",
+        "type": "http request",
+        "z": "f52356682ef521b6",
+        "name": "Restart",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:1880/flows",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 900,
+        "y": 1860,
+        "wires": [
+            []
+        ],
+        "info": "Note:\nEnsure the path is correct\nif httpAdminRoot: '/admin' is activated then \nthis needs to be added to\nhttp://localhost:1880/"
+    },
+    {
+        "id": "e4347a5c9252011c",
+        "type": "ui_button",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "group": "f4101a3d4ab4342b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Restart Node-Red",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 1940,
+        "wires": [
+            [
+                "a06415d6.7ed3c8"
+            ]
+        ]
+    },
+    {
         "id": "8f22a97b83a72e23",
         "type": "debug",
         "z": "49a059a331e99ceb",
@@ -2994,6 +3163,70 @@
         "complete": "false",
         "x": 510,
         "y": 400,
+        "wires": []
+    },
+    {
+        "id": "1096b35cc7d7b4b9",
+        "type": "inject",
+        "z": "7acb2dc94956cd1b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "175c2d8f2a3b6062"
+            ]
+        ]
+    },
+    {
+        "id": "175c2d8f2a3b6062",
+        "type": "Blockly",
+        "z": "7acb2dc94956cd1b",
+        "func": "",
+        "workspaceXml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"></xml>",
+        "outputs": 1,
+        "blocklyConfig": "",
+        "backpackContents": [],
+        "noerr": 0,
+        "name": "",
+        "x": 420,
+        "y": 300,
+        "wires": [
+            [
+                "047b61f72c3255c9"
+            ]
+        ]
+    },
+    {
+        "id": "047b61f72c3255c9",
+        "type": "debug",
+        "z": "7acb2dc94956cd1b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 300,
         "wires": []
     }
 ]
