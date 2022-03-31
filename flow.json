@@ -27,9 +27,9 @@
         "id": "d78b39c09204eea4",
         "type": "postgreSQLConfig",
         "name": "",
-        "host": "127.0.0.1",
+        "host": "14.51.17.64",
         "hostFieldType": "str",
-        "port": "55432",
+        "port": "65432",
         "portFieldType": "num",
         "database": "node-red",
         "databaseFieldType": "str",
@@ -45,7 +45,7 @@
         "connectionTimeoutFieldType": "num",
         "user": "postgres",
         "userFieldType": "str",
-        "password": "egg1412",
+        "password": "postgres",
         "passwordFieldType": "str"
     },
     {
@@ -404,11 +404,6 @@
         "wires": [
             [
                 "41ace98fb0de4bca",
-                "a1532f3bca50d039",
-                "4cbd88bbfd756c1e",
-                "959963054c946898",
-                "e03be3a7335b7663",
-                "99fdd845a47b13db",
                 "d9a25bbf0e3df2cf",
                 "390eba1eb0f51dd1",
                 "22b6cc830cb28fe3",
@@ -418,106 +413,16 @@
                 "87863721210704d7",
                 "f4cd43a7989f968e",
                 "0b889a6c1eee723a",
-                "49d21e0783834096",
-                "b77b1add6847e96c",
-                "20c41a234f50721a",
-                "0aac13fbe510042c",
-                "41e1be2a079c2253"
-            ]
-        ]
-    },
-    {
-        "id": "a1532f3bca50d039",
-        "type": "signal-taga",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagA",
-        "field": "All",
-        "x": 630,
-        "y": 1100,
-        "wires": [
-            [
-                "8f3ae5ec69535d6f",
-                "16dbcef345133387",
-                "78096bca2cb48544",
-                "05c5c75217424ab7",
-                "8288e6e0ecefacec"
-            ]
-        ]
-    },
-    {
-        "id": "4cbd88bbfd756c1e",
-        "type": "signal-tagb",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagB",
-        "field": "All",
-        "x": 630,
-        "y": 1160,
-        "wires": [
-            [
-                "8f3ae5ec69535d6f",
-                "61879bd25d8ab09c",
-                "6d73895555dea42e",
-                "d411631687c14357",
-                "8288e6e0ecefacec"
-            ]
-        ]
-    },
-    {
-        "id": "959963054c946898",
-        "type": "signal-tagc",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagC",
-        "field": "All",
-        "x": 630,
-        "y": 1220,
-        "wires": [
-            [
-                "8f3ae5ec69535d6f",
-                "b9c0e31c60ce9b31",
-                "6ef2f4694cb4aa48",
-                "e3247f0a83843de6",
-                "8288e6e0ecefacec"
-            ]
-        ]
-    },
-    {
-        "id": "e03be3a7335b7663",
-        "type": "signal-tagd",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagD",
-        "field": "All",
-        "x": 630,
-        "y": 1280,
-        "wires": [
-            [
-                "8f3ae5ec69535d6f",
-                "a15d43745c338c58",
-                "1e486ed6a7a187da",
-                "84061be9e21302f8",
-                "8288e6e0ecefacec"
-            ]
-        ]
-    },
-    {
-        "id": "99fdd845a47b13db",
-        "type": "signal-tage",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagE",
-        "field": "All",
-        "x": 630,
-        "y": 1340,
-        "wires": [
-            [
-                "8f3ae5ec69535d6f",
-                "d5a5dead9e3f4d6c",
-                "b1ee5b3bf7eb9394",
-                "b1a45fa4a0e47611",
-                "8288e6e0ecefacec"
+                "1ba534064b94f02c",
+                "e556bc129f2a6793",
+                "a6b45c08808d760a",
+                "8a28687de809f10a",
+                "a6c4a597c608632e",
+                "9637d3865b6f5f40",
+                "63f13c0da80f4eeb",
+                "e9c64e1fa87f825a",
+                "6e2b5892c64e3213",
+                "323cc11b2b33e443"
             ]
         ]
     },
@@ -1522,86 +1427,6 @@
         "y": 1000,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "49d21e0783834096",
-        "type": "signal-taga",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagA",
-        "field": "Value",
-        "x": 630,
-        "y": 1460,
-        "wires": [
-            [
-                "8298dcab0e56f312",
-                "25a713f9e855a64d"
-            ]
-        ]
-    },
-    {
-        "id": "b77b1add6847e96c",
-        "type": "signal-tagb",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagB",
-        "field": "Value",
-        "x": 630,
-        "y": 1520,
-        "wires": [
-            [
-                "613b8df9b315a05a",
-                "c70fc06e9aea105b"
-            ]
-        ]
-    },
-    {
-        "id": "20c41a234f50721a",
-        "type": "signal-tagc",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagC",
-        "field": "Value",
-        "x": 630,
-        "y": 1580,
-        "wires": [
-            [
-                "e4eb6bc40b8a8a56",
-                "ceb7479448e952ee"
-            ]
-        ]
-    },
-    {
-        "id": "0aac13fbe510042c",
-        "type": "signal-tagd",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagD",
-        "field": "Value",
-        "x": 630,
-        "y": 1640,
-        "wires": [
-            [
-                "4f226a8bcd7cc272",
-                "ba8446a1d9830b00"
-            ]
-        ]
-    },
-    {
-        "id": "41e1be2a079c2253",
-        "type": "signal-tage",
-        "z": "f52356682ef521b6",
-        "name": "",
-        "tag": "TagE",
-        "field": "Value",
-        "x": 630,
-        "y": 1700,
-        "wires": [
-            [
-                "350997102acd2684",
-                "23061c0f4016bb50"
-            ]
         ]
     },
     {
@@ -2785,7 +2610,8 @@
         "y": 1860,
         "wires": [
             [
-                "47aa4d07.5bae94"
+                "47aa4d07.5bae94",
+                "7d221be492b77a1c"
             ]
         ]
     },
@@ -2836,7 +2662,8 @@
         "y": 1860,
         "wires": [
             [
-                "d69beb8b.7008a8"
+                "d69beb8b.7008a8",
+                "aad2bcc71b30bac2"
             ]
         ],
         "info": "Note:\nEnsure the path is correct\nif httpAdminRoot: '/admin' is activated then \nthis needs to be added to\nhttp://localhost:1880/"
@@ -2907,6 +2734,215 @@
         "wires": [
             [
                 "a06415d6.7ed3c8"
+            ]
+        ]
+    },
+    {
+        "id": "7d221be492b77a1c",
+        "type": "debug",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 510,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "aad2bcc71b30bac2",
+        "type": "debug",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "1ba534064b94f02c",
+        "type": "signal-TagA",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagA",
+        "field": "Value",
+        "x": 630,
+        "y": 1100,
+        "wires": [
+            [
+                "16dbcef345133387",
+                "78096bca2cb48544",
+                "05c5c75217424ab7",
+                "8f3ae5ec69535d6f",
+                "8288e6e0ecefacec"
+            ]
+        ]
+    },
+    {
+        "id": "e556bc129f2a6793",
+        "type": "signal-TagB",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagB",
+        "field": "Value",
+        "x": 630,
+        "y": 1160,
+        "wires": [
+            [
+                "61879bd25d8ab09c",
+                "6d73895555dea42e",
+                "d411631687c14357",
+                "8f3ae5ec69535d6f",
+                "8288e6e0ecefacec"
+            ]
+        ]
+    },
+    {
+        "id": "a6b45c08808d760a",
+        "type": "signal-TagC",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagC",
+        "field": "Value",
+        "x": 630,
+        "y": 1220,
+        "wires": [
+            [
+                "b9c0e31c60ce9b31",
+                "6ef2f4694cb4aa48",
+                "e3247f0a83843de6",
+                "8f3ae5ec69535d6f",
+                "8288e6e0ecefacec"
+            ]
+        ]
+    },
+    {
+        "id": "8a28687de809f10a",
+        "type": "signal-TagD",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagD",
+        "field": "Value",
+        "x": 630,
+        "y": 1280,
+        "wires": [
+            [
+                "a15d43745c338c58",
+                "1e486ed6a7a187da",
+                "84061be9e21302f8",
+                "8f3ae5ec69535d6f",
+                "8288e6e0ecefacec"
+            ]
+        ]
+    },
+    {
+        "id": "a6c4a597c608632e",
+        "type": "signal-TagE",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagE",
+        "field": "Value",
+        "x": 630,
+        "y": 1340,
+        "wires": [
+            [
+                "d5a5dead9e3f4d6c",
+                "b1ee5b3bf7eb9394",
+                "b1a45fa4a0e47611",
+                "8f3ae5ec69535d6f",
+                "8288e6e0ecefacec"
+            ]
+        ]
+    },
+    {
+        "id": "9637d3865b6f5f40",
+        "type": "signal-TagA",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagA",
+        "field": "Value",
+        "x": 630,
+        "y": 1460,
+        "wires": [
+            [
+                "8298dcab0e56f312",
+                "25a713f9e855a64d"
+            ]
+        ]
+    },
+    {
+        "id": "63f13c0da80f4eeb",
+        "type": "signal-TagB",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagB",
+        "field": "Value",
+        "x": 630,
+        "y": 1520,
+        "wires": [
+            [
+                "613b8df9b315a05a",
+                "c70fc06e9aea105b"
+            ]
+        ]
+    },
+    {
+        "id": "e9c64e1fa87f825a",
+        "type": "signal-TagC",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagC",
+        "field": "Value",
+        "x": 630,
+        "y": 1580,
+        "wires": [
+            [
+                "e4eb6bc40b8a8a56",
+                "ceb7479448e952ee"
+            ]
+        ]
+    },
+    {
+        "id": "6e2b5892c64e3213",
+        "type": "signal-TagD",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagD",
+        "field": "Value",
+        "x": 630,
+        "y": 1640,
+        "wires": [
+            [
+                "4f226a8bcd7cc272",
+                "ba8446a1d9830b00"
+            ]
+        ]
+    },
+    {
+        "id": "323cc11b2b33e443",
+        "type": "signal-TagE",
+        "z": "f52356682ef521b6",
+        "name": "",
+        "tag": "TagE",
+        "field": "Value",
+        "x": 630,
+        "y": 1700,
+        "wires": [
+            [
+                "350997102acd2684",
+                "23061c0f4016bb50"
             ]
         ]
     },
