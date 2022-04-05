@@ -838,7 +838,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1090,
-        "y": 1160,
+        "y": 1140,
         "wires": []
     },
     {
@@ -855,7 +855,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1090,
-        "y": 1220,
+        "y": 1200,
         "wires": []
     },
     {
@@ -872,7 +872,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1090,
-        "y": 1280,
+        "y": 1260,
         "wires": []
     },
     {
@@ -889,7 +889,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1090,
-        "y": 1340,
+        "y": 1320,
         "wires": []
     },
     {
@@ -906,7 +906,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 1090,
-        "y": 1400,
+        "y": 1380,
         "wires": []
     },
     {
@@ -933,7 +933,7 @@
         "seg2": "70",
         "className": "",
         "x": 1250,
-        "y": 1180,
+        "y": 1160,
         "wires": []
     },
     {
@@ -960,7 +960,7 @@
         "seg2": "70",
         "className": "",
         "x": 1250,
-        "y": 1240,
+        "y": 1220,
         "wires": []
     },
     {
@@ -987,7 +987,7 @@
         "seg2": "70",
         "className": "",
         "x": 1250,
-        "y": 1300,
+        "y": 1280,
         "wires": []
     },
     {
@@ -1014,7 +1014,7 @@
         "seg2": "70",
         "className": "",
         "x": 1250,
-        "y": 1360,
+        "y": 1340,
         "wires": []
     },
     {
@@ -1041,7 +1041,7 @@
         "seg2": "70",
         "className": "",
         "x": 1250,
-        "y": 1420,
+        "y": 1400,
         "wires": []
     },
     {
@@ -1058,7 +1058,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 930,
-        "y": 1140,
+        "y": 1120,
         "wires": []
     },
     {
@@ -1075,7 +1075,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 930,
-        "y": 1200,
+        "y": 1180,
         "wires": []
     },
     {
@@ -1092,7 +1092,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 930,
-        "y": 1260,
+        "y": 1240,
         "wires": []
     },
     {
@@ -1109,7 +1109,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 930,
-        "y": 1320,
+        "y": 1300,
         "wires": []
     },
     {
@@ -1126,7 +1126,7 @@
         "layout": "row-spread",
         "className": "",
         "x": 930,
-        "y": 1380,
+        "y": 1360,
         "wires": []
     },
     {
@@ -1168,7 +1168,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 760,
+        "y": 740,
         "wires": [
             []
         ]
@@ -1181,7 +1181,7 @@
         "tag": "TagA",
         "field": "Value",
         "x": 630,
-        "y": 760,
+        "y": 740,
         "wires": [
             [
                 "f4768b4e3b6ecd63",
@@ -1197,7 +1197,7 @@
         "tag": "TagB",
         "field": "Value",
         "x": 630,
-        "y": 820,
+        "y": 800,
         "wires": [
             [
                 "5894f49a5fdb3e3e",
@@ -1213,7 +1213,7 @@
         "tag": "TagC",
         "field": "Value",
         "x": 630,
-        "y": 880,
+        "y": 860,
         "wires": [
             [
                 "8e419c47ccf0d5e0",
@@ -1229,7 +1229,7 @@
         "tag": "TagD",
         "field": "Value",
         "x": 630,
-        "y": 940,
+        "y": 920,
         "wires": [
             [
                 "3d75501891e10ff6",
@@ -1245,7 +1245,7 @@
         "tag": "TagE",
         "field": "Value",
         "x": 630,
-        "y": 1000,
+        "y": 980,
         "wires": [
             [
                 "507efc1d53cc89b8",
@@ -1292,7 +1292,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 820,
+        "y": 800,
         "wires": [
             []
         ]
@@ -1336,7 +1336,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 880,
+        "y": 860,
         "wires": [
             []
         ]
@@ -1380,7 +1380,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 940,
+        "y": 920,
         "wires": [
             []
         ]
@@ -1424,7 +1424,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 1000,
+        "y": 980,
         "wires": [
             []
         ]
@@ -1468,7 +1468,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 1460,
+        "y": 1420,
         "wires": [
             []
         ]
@@ -1512,7 +1512,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 1520,
+        "y": 1480,
         "wires": [
             []
         ]
@@ -1556,7 +1556,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 1580,
+        "y": 1540,
         "wires": [
             []
         ]
@@ -1600,7 +1600,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 1640,
+        "y": 1600,
         "wires": [
             []
         ]
@@ -1644,7 +1644,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 930,
-        "y": 1700,
+        "y": 1660,
         "wires": [
             []
         ]
@@ -1688,7 +1688,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 780,
+        "y": 760,
         "wires": []
     },
     {
@@ -1730,7 +1730,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 840,
+        "y": 820,
         "wires": []
     },
     {
@@ -1772,7 +1772,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 900,
+        "y": 880,
         "wires": []
     },
     {
@@ -1814,7 +1814,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 960,
+        "y": 940,
         "wires": []
     },
     {
@@ -1856,7 +1856,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 1020,
+        "y": 1000,
         "wires": []
     },
     {
@@ -1898,7 +1898,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 1480,
+        "y": 1440,
         "wires": []
     },
     {
@@ -1940,7 +1940,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 1540,
+        "y": 1500,
         "wires": []
     },
     {
@@ -1982,7 +1982,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 1600,
+        "y": 1560,
         "wires": []
     },
     {
@@ -2024,7 +2024,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 1660,
+        "y": 1620,
         "wires": []
     },
     {
@@ -2066,7 +2066,7 @@
         "property": "payload",
         "peaktime": 3000,
         "x": 1090,
-        "y": 1720,
+        "y": 1680,
         "wires": []
     },
     {
@@ -2592,7 +2592,7 @@
         "name": "사용자 이벤트",
         "info": "버튼을 클릭하면 Node-Red를 재 시작한다.",
         "x": 90,
-        "y": 1800,
+        "y": 1740,
         "wires": []
     },
     {
@@ -2607,7 +2607,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1860,
+        "y": 1800,
         "wires": [
             [
                 "47aa4d07.5bae94",
@@ -2637,7 +2637,7 @@
         "payload": "",
         "payloadType": "str",
         "x": 110,
-        "y": 1860,
+        "y": 1800,
         "wires": [
             [
                 "a06415d6.7ed3c8"
@@ -2659,7 +2659,7 @@
         "authType": "",
         "senderr": false,
         "x": 510,
-        "y": 1860,
+        "y": 1800,
         "wires": [
             [
                 "d69beb8b.7008a8",
@@ -2680,7 +2680,7 @@
         "finalize": "",
         "libs": [],
         "x": 700,
-        "y": 1860,
+        "y": 1800,
         "wires": [
             [
                 "ccd455c1.f34318"
@@ -2703,7 +2703,7 @@
         "authType": "",
         "senderr": false,
         "x": 900,
-        "y": 1860,
+        "y": 1800,
         "wires": [
             []
         ],
@@ -2730,7 +2730,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
-        "y": 1940,
+        "y": 1880,
         "wires": [
             [
                 "a06415d6.7ed3c8"
@@ -2751,7 +2751,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 510,
-        "y": 1940,
+        "y": 1880,
         "wires": []
     },
     {
@@ -2768,7 +2768,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 670,
-        "y": 1940,
+        "y": 1880,
         "wires": []
     },
     {
@@ -2779,7 +2779,7 @@
         "tag": "TagA",
         "field": "Value",
         "x": 630,
-        "y": 1100,
+        "y": 1080,
         "wires": [
             [
                 "16dbcef345133387",
@@ -2798,7 +2798,7 @@
         "tag": "TagB",
         "field": "Value",
         "x": 630,
-        "y": 1160,
+        "y": 1140,
         "wires": [
             [
                 "61879bd25d8ab09c",
@@ -2817,7 +2817,7 @@
         "tag": "TagC",
         "field": "Value",
         "x": 630,
-        "y": 1220,
+        "y": 1200,
         "wires": [
             [
                 "b9c0e31c60ce9b31",
@@ -2836,7 +2836,7 @@
         "tag": "TagD",
         "field": "Value",
         "x": 630,
-        "y": 1280,
+        "y": 1260,
         "wires": [
             [
                 "a15d43745c338c58",
@@ -2855,7 +2855,7 @@
         "tag": "TagE",
         "field": "Value",
         "x": 630,
-        "y": 1340,
+        "y": 1320,
         "wires": [
             [
                 "d5a5dead9e3f4d6c",
@@ -2874,7 +2874,7 @@
         "tag": "TagA",
         "field": "Value",
         "x": 630,
-        "y": 1460,
+        "y": 1420,
         "wires": [
             [
                 "8298dcab0e56f312",
@@ -2890,7 +2890,7 @@
         "tag": "TagB",
         "field": "Value",
         "x": 630,
-        "y": 1520,
+        "y": 1480,
         "wires": [
             [
                 "613b8df9b315a05a",
@@ -2906,7 +2906,7 @@
         "tag": "TagC",
         "field": "Value",
         "x": 630,
-        "y": 1580,
+        "y": 1540,
         "wires": [
             [
                 "e4eb6bc40b8a8a56",
@@ -2922,7 +2922,7 @@
         "tag": "TagD",
         "field": "Value",
         "x": 630,
-        "y": 1640,
+        "y": 1600,
         "wires": [
             [
                 "4f226a8bcd7cc272",
@@ -2938,7 +2938,7 @@
         "tag": "TagE",
         "field": "Value",
         "x": 630,
-        "y": 1700,
+        "y": 1660,
         "wires": [
             [
                 "350997102acd2684",
